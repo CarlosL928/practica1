@@ -3,12 +3,34 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import './App.jsx'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import vehicles from './data/Vehicle.js'
+import VehicleView from './views/VehicleViews.jsx'
+
+const routes =[
+{
+  path: "/",
+  element: <App/>
+}
+]
+
+vehicles.forEach((vehicle) => {
+  routes.push({
+    path: vehicle.name,
+    element: <VehicleView vehicle={vehicle}/>,
+  
+  });
+
+});
+
+const router = createBrowserRouter(routes)
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App/>
+    <RouterProvider router={router}/>
   </React.StrictMode>,
-)
+);
 
 
 

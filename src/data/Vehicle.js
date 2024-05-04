@@ -20,7 +20,7 @@ const vehicles = [
     {
       name: "Plane",
       description: "Tickets are expensive",
-      image: "https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg",
+      image: "https://th.bing.com/th/id/OIP.Z6pfTBRAwk6sd1tydhM4nwHaEK?rs=1&pid=ImgDetMain"
     },
     {
       name: "Ship",
