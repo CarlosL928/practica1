@@ -1,0 +1,66 @@
+.Button {
+  
+        background-color: skyblue;
+        border-radius: 45px;
+        position: absolute;
+        top: auto;
+        left: auto;
+    
+}
+
+.Encabezado{
+        color: purple;
+        position: absolute;
+        top: 50px;
+}
+
+.Inicio{
+        color: black;
+        position: absolute;
+        top: 80px;
+        right: 80px;
+        
+}
+
+.Contacto {
+    
+
+        color: black;
+        position: absolute;
+        top: 80px;
+        right: 240px;
+
+}
+
+.Contenido {
+        color: black;
+        text-align: calc(25px, 30px);
+      }
+
+.F1 {
+        color: black;
+        position: absolute;
+        bottom: 80px;
+        left: 10%;
+       
+          
+}      
+
+.F2 {
+        color: black;
+        position: absolute;
+        bottom: 80px;
+        left: 40%;
+        right: 40%; 
+        
+       
+          
+}      
+.F3 {
+        color: black;
+        position: absolute;
+        bottom: 80px;
+        right: 10%;
+       
+          
+}      

@@ -1,28 +1,46 @@
 import './App.css'
-import Card from './components/Card'
-import vehicle from './data/Vehicle'
-import ShowHide from './components/ShowHide'
+import Button from './components/Button';
+import Encabezado from './components/Encabezado';
+import Contenido from './components/Contenido';
+import Footer from './components/Footer';
 
-function App() {
-  const vehicleList = vehicle.map((v) => {
-  return <Card title={v.name} description={v.description}/>
-  });
+export default function App() {
+  
 
   return (
-    
-      <div className='App'>
-        <h1>App REACT</h1>
-        <div className='container'>
-       {vehicleList}
-       </div>
-      
-            <ShowHide/>
-        </div>
-    
-  );
-}
+    <> 
+ 
+     <Encabezado titulo='Carlos Store' 
+     Inicio='Inicio' contacto='Contacto'/>
 
-export default App;
+     <Contenido>
+      <div className='Contenido'>
+       <h1>Bienvenido a la tienda!</h1>
+       <div>
+        <h2></h2>
+       </div>
+      <Button/>
+     </div>
+     </Contenido>
+
+     <Footer titulo= 'Envio Gratis' subtitulo= 'Mayor a $100' 
+     titulo2 = 'Pago Rápido' subtitulo2= '100% Seguro' 
+     titulo3 = 'Soporte 24/7' subtitulo3= 'Siempre para Usted' 
+     />
+
+
+
+        
+      
+    
+      
+         
+     
+  </>
+  );
+};
+
+ 
 
 
 
